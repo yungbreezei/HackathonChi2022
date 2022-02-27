@@ -30,6 +30,24 @@
           font-size: 3.5rem;
         }
       }
+      h2{
+        font-size: 1.5vw;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color:black;
+      }
+      button{
+        background: #FFFFFF;
+        border: 1px solid #4834D4;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 20px rgba(104, 108, 224, 0.178);
+        border-radius: 50px;
+      }
+      text{
+        font-size: 30px;
+        color: black;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+
     </style> 
   </head>
   <body>
@@ -46,21 +64,23 @@
  <!-- cipher in page -->
  <!-- <script src="cipher.js"></script> -->
  <div id="container">
-   <div class="speech">Put the text to cipher in the input (Keep offset=13 plz :))</div>
-   <br/>
+  <div class="speech"><h2>Put the text to cipher in the input.</h2></div>
+  <br/>
    
    <div class="input">
-      <form action = runCipher()>
+    <form action = runCipher()>
       <label for="text">Text:</label>
-       <input type="text" id="cypher"/>
+       <input type="text" id="cypher"style="box-sizing: content-box;
+       width: 50%"/>
        <label for="offset2">Offset:</label>
-       <input type="number" value="13" id="offset"/>
+       <input value="13" id="offset"style="box-sizing: content-box;
+       width: 5%"/>
        <br/>
        <br/>
        <br/>
        Result:
        <input type="text" id="finish" style="box-sizing: content-box;
-       width: 100%"/>
+       width: 50%"/>
  
        <br/>
        <br/>
@@ -117,8 +137,9 @@
     <div class="container">
       <div class="row row-cols-1 g-3">
         <div class="col">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#B9D3FF"></rect><text x="50%" y="50%" fill="#000000" dy=".3em"font-size="40px">What is the full form or ICO in the crypto language?</text></svg>
+            <text>What is the full form or ICO in the crypto language?<br/><br/></text>
         </div>
+        <br/>
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2">
         <div class="col">
               <div class="d-flex justify-content-between align-items-center">
@@ -214,14 +235,22 @@
       </div>
     </div>
   </div>
-
+  <div class="d-flex flex-row-reverse mb-3">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="btn-group">
+        <button class="nextbutton" style="
+          color:white;
+          width: 250px;
+          height: 50px;
+          background: linear-gradient(272.88deg, #686DE0 4.95%, #4834D4 93.62%);
+          box-shadow: 0px 4px 20px rgba(104, 109, 224, 0.5);
+          border-radius: 50px;" 
+        onclick="document.location='page6.html'" type="button">Next Question
+        </button>
+      <!-- <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> -->
+    </div>
+  </div>
+</div>
 </main>
-  <div class="d-flex justify-content-between align-items-center">
-    <div class="btn-group">
-      <button class="nextbutton" 
-      onclick="document.location='page6.html'" type="button">Next Question
-      </button>
-    <!-- <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> -->
-      
   </body>
 </html>
