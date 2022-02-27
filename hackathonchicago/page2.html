@@ -9,7 +9,7 @@
     <title>page2</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
-
+    <script src="cipher.js"></script>
     <link href="styleguide.css" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
@@ -34,54 +34,42 @@
     
   </head>
   <body>
-    
-<header>
-  <div class="collapse bg-dark" id="navbarHeader">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-md-7 py-4">
-          <h4 class="text-white">About</h4>
-          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-        </div>
-        <div class="col-sm-4 offset-md-1 py-4">
-          <h4 class="text-white">Contact</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-            <li><a href="#" class="text-white">Like on Facebook</a></li>
-            <li><a href="#" class="text-white">Email me</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="container">
-      <a href="#" class="navbar-brand d-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-        <strong>Album</strong>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </div>
-</header>
-
 <main>
 
-  <section class="py-5 text-center container">
-    <div class="row py-lg-5" style="
-    padding-top: 3rem!important;
-    padding-bottom: 0px;">
+  <section class="py-1 text-center container">
+    <div class="row py-lg-1">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Album example</h1>
-        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+       <img src ="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1a6fad99-a9ca-408b-84eb-904395ea4915/d9rvo9y-6badf439-457c-470a-817c-d44d907323d3.png/v1/fill/w_1024,h_1019,q_80,strp/bill_cipher_wheel_by_flippytiger_d9rvo9y-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAxOSIsInBhdGgiOiJcL2ZcLzFhNmZhZDk5LWE5Y2EtNDA4Yi04NGViLTkwNDM5NWVhNDkxNVwvZDlydm85eS02YmFkZjQzOS00NTdjLTQ3MGEtODE3Yy1kNDRkOTA3MzIzZDMucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.yUaIZxPuAR619ykTQPHftR8qGvSE6SjhlzMh5Hnota4" width="250" height="250">
+
+        <p class="lead text-muted">Something short and leading about the collection below—its.</p>
         <p>
           <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
           <a href="#" class="btn btn-secondary my-2">Secondary action</a>
         </p>
       </div>
     </div>
+    <div id="container">
+      <div class="speech">Put the text to cipher in the input</div>
+      <div class="input">
+        <form id="form">
+          Text: 
+          <input type="text" id="cypher"/>
+          Offset:
+          <input type="number" value="7" id="offset"/>
+          <br/>
+          <br/>
+          <br/>
+          Finish:
+          <input type="text" id="finish"/>
+    
+          <br/>
+          <br/>
+          <br/>
+          
+        </form>
+      </div>
+    </div>
+
   </section>
 
 <div class="album py-5 bg-light">
@@ -95,7 +83,7 @@
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
        
-                  <button id="Choice 1" onclick="colorchanger()" type="buttonsize" class="btn btn-sm btn-outline-secondary" style="
+                  <button id="Choice 1" onclick="colorChanger()" type="buttonsize" class="btn btn-sm btn-outline-secondary" style="
                   padding: 15px 32px;
                   text-align: center;
                   text-decoration: none;
