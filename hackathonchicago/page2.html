@@ -11,6 +11,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
     <!-- <script type="text/javascript" src="cipher.js"></script> -->
     <link href="cipherStyle.css" rel="stylesheet">
+    <!-- <link href="/newhub/styleguide.css" rel="stylesheet"> -->
 
     <!-- Bootstrap core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -29,9 +30,7 @@
           font-size: 3.5rem;
         }
       }
-    </style>
-
-    
+    </style> 
   </head>
   <body>
 <main>
@@ -40,41 +39,34 @@
     <div class="row py-lg-1">
       <div class="col-lg-6 col-md-8 mx-auto">
        <img src ="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1a6fad99-a9ca-408b-84eb-904395ea4915/d9rvo9y-6badf439-457c-470a-817c-d44d907323d3.png/v1/fill/w_1024,h_1019,q_80,strp/bill_cipher_wheel_by_flippytiger_d9rvo9y-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAxOSIsInBhdGgiOiJcL2ZcLzFhNmZhZDk5LWE5Y2EtNDA4Yi04NGViLTkwNDM5NWVhNDkxNVwvZDlydm85eS02YmFkZjQzOS00NTdjLTQ3MGEtODE3Yy1kNDRkOTA3MzIzZDMucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.yUaIZxPuAR619ykTQPHftR8qGvSE6SjhlzMh5Hnota4" width="250" height="250">
-
-        <p class="lead text-muted">Something short and leading about the collection below—its.</p>
-        <p>
-          <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-        </p>
+       <br/>
+       <br/>
       </div>
     </div>
  <!-- cipher in page -->
  <!-- <script src="cipher.js"></script> -->
- <script>
-   console.log("WHAT TIME IS IT?");
- </script>
  <div id="container">
-   <div class="speech">Put the text to cipher in the input</div>
+   <div class="speech">Put the text to cipher in the input (Keep offset=13 plz :))</div>
+   <br/>
+   
    <div class="input">
-      <form action =runCipher()>
+      <form action = runCipher()>
       <label for="text">Text:</label>
-       <input type="text" id="cypher" what="text"/>
-       <script>console.log("we made it!UAAAYYA");</script>
+       <input type="text" id="cypher"/>
        <label for="offset2">Offset:</label>
-       <input type="number" value="7" id="offset"/>
+       <input type="number" value="13" id="offset"/>
        <br/>
        <br/>
        <br/>
-       Finish:
+       Result:
        <input type="text" id="finish"/>
  
        <br/>
        <br/>
        <br/>
-       <input type="sumbit" value="submit">
       </form>
       <!-- <div id="answer"></div> -->
-
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
       <script>
         var alphabet = "abcdefghijklmnopqrstuvwxyz";
         var fullAlphabet = alphabet + alphabet + alphabet;
@@ -101,10 +93,10 @@
          cipherFinish += nextLetter;
           }
           }
-    
+            
           $('#finish').val(cipherFinish);
           }
-          /* $(document).ready(function() {
+          $(document).ready(function() {
           $('#cypher').keypress(function(){
           setTimeout(function(){ runCipher(); },20);
           });
@@ -115,7 +107,7 @@
           setTimeout(runCipher(),20);
           });
   
-          });*/
+          });
       </script>
    </div>
  </div>
@@ -130,7 +122,7 @@
     <div class="container">
       <div class="row row-cols-1 g-3">
         <div class="col">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#FFFFFF"></rect><text x="50%" y="50%" fill="#000000" dy=".3em">Thumbnail</text></svg>
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#FFFFFF"></rect><text x="50%" y="50%" fill="#000000" dy=".3em">What are cryptocurrencies?</text></svg>
         </div>
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2">
         <div class="col">
