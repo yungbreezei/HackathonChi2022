@@ -9,7 +9,7 @@
     <title>page2</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
-    <script type="text/javascript" src="cipher.js"></script>
+    <!-- <script type="text/javascript" src="cipher.js"></script> -->
     <link href="styleguide.css" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
@@ -53,7 +53,7 @@
  <div id="container">
    <div class="speech">Put the text to cipher in the input</div>
    <div class="input">
-     <form action id="form">
+      <form action =runCipher()>
        Text: 
        <input type="text" id="cypher"/>
        Offset:
@@ -68,48 +68,51 @@
        <br/>
        <br/>
        
-     </form>
-     <script>
-     var alphabet = "abcdefghijklmnopqrstuvwxyz";
-     var fullAlphabet = alphabet + alphabet + alphabet;
- 
-     function runCipher(){
-   var cipherText = $('#cypher').val();
-   var cipherOffset = $('#offset').val();
-   cipherOffset = (cipherOffset % alphabet.length);
-   var cipherFinish = '';
- 
-   for(i=0; i<cipherText.length; i++){
-      var letter = cipherText[i];
-      var upper = (letter == letter.toUpperCase());
-      letter = letter.toLowerCase();
-     
-      var index = alphabet.indexOf(letter);
-      if(index == -1){
-        cipherFinish += letter;
-      } else {
+      </form>
+      <!-- <div id="answer"></div> -->
+
+      <script>
+        var alphabet = "abcdefghijklmnopqrstuvwxyz";
+        var fullAlphabet = alphabet + alphabet + alphabet;
+
+        function runCipher(){
+        console.log("we made it!UAAAYYA");
+        var cipherText = $('#cypher').val();
+        var cipherOffset = $('#offset').val();
+        cipherOffset = (cipherOffset % alphabet.length);
+        var cipherFinish = '';
+
+        for(i=0; i<cipherText.length; i++){
+          var letter = cipherText[i];
+          var upper = (letter == letter.toUpperCase());
+          letter = letter.toLowerCase();
+    
+        var index = alphabet.indexOf(letter);
+          if(index == -1){
+          cipherFinish += letter;
+            } else {
         index = ((index + cipherOffset) + alphabet.length);
-        var nextLetter = fullAlphabet[index];
+         var nextLetter = fullAlphabet[index];
         if(upper) nextLetter = nextLetter.toUpperCase();
-        cipherFinish += nextLetter;
-      }
-   }
-     
-   $('#finish').val(cipherFinish);
- }
- $(document).ready(function() {
-  $('#cypher').keypress(function(){
-    setTimeout(function(){ runCipher(); },20);
-  });
-  $('#cypher').blur(function(){
-    runCipher();
-  });
-  $('#offset').change(function(){
-    setTimeout(runCipher(),20);
-  });
+         cipherFinish += nextLetter;
+          }
+          }
+    
+          $('#finish').val(cipherFinish);
+          }
+          $(document).ready(function() {
+          $('#cypher').keypress(function(){
+          setTimeout(function(){ runCipher(); },20);
+          });
+          $('#cypher').blur(function(){
+          runCipher();
+          });
+          $('#offset').change(function(){
+          setTimeout(runCipher(),20);
+          });
   
-});
-</script>
+          });
+      </script>
    </div>
  </div>
 
