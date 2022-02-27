@@ -26,7 +26,7 @@
   $('#finish').val(cipherFinish);
 }
 
-jQuery(document).ready(function($){
+$(document).ready(function() {
   $('#cypher').keypress(function(){
     setTimeout(function(){ runCipher(); },20);
   });
