@@ -10,7 +10,7 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
     <!-- <script type="text/javascript" src="cipher.js"></script> -->
-    <link href="styleguide.css" rel="stylesheet">
+    <link href="cipherStyle.css" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -50,13 +50,17 @@
     </div>
  <!-- cipher in page -->
  <!-- <script src="cipher.js"></script> -->
+ <script>
+   console.log("WHAT TIME IS IT?");
+ </script>
  <div id="container">
    <div class="speech">Put the text to cipher in the input</div>
    <div class="input">
       <form action =runCipher()>
-       Text: 
-       <input type="text" id="cypher"/>
-       Offset:
+      <label for="text">Text:</label>
+       <input type="text" id="cypher" what="text"/>
+       <script>console.log("we made it!UAAAYYA");</script>
+       <label for="offset2">Offset:</label>
        <input type="number" value="7" id="offset"/>
        <br/>
        <br/>
@@ -67,7 +71,7 @@
        <br/>
        <br/>
        <br/>
-       
+       <input type="sumbit" value="submit">
       </form>
       <!-- <div id="answer"></div> -->
 
@@ -76,7 +80,7 @@
         var fullAlphabet = alphabet + alphabet + alphabet;
 
         function runCipher(){
-        console.log("we made it!UAAAYYA");
+        
         var cipherText = $('#cypher').val();
         var cipherOffset = $('#offset').val();
         cipherOffset = (cipherOffset % alphabet.length);
@@ -100,7 +104,7 @@
     
           $('#finish').val(cipherFinish);
           }
-          $(document).ready(function() {
+          /* $(document).ready(function() {
           $('#cypher').keypress(function(){
           setTimeout(function(){ runCipher(); },20);
           });
@@ -111,7 +115,7 @@
           setTimeout(runCipher(),20);
           });
   
-          });
+          });*/
       </script>
    </div>
  </div>
@@ -209,7 +213,7 @@
 
 </main>
 
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> -->
       
   </body>
 </html>
