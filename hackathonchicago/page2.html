@@ -30,6 +30,20 @@
           font-size: 3.5rem;
         }
       }
+      h2{
+        font-size: 1vw;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color:black;
+      }
+      button{
+        background: #FFFFFF;
+        border: 1px solid #4834D4;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 20px rgba(104, 108, 224, 0.178);
+        border-radius: 50px;
+      }
+      
+
     </style> 
   </head>
   <body>
@@ -46,7 +60,7 @@
  <!-- cipher in page -->
  <!-- <script src="cipher.js"></script> -->
  <div id="container">
-   <div class="speech">Put the text to cipher in the input (Keep offset=13 plz :))</div>
+   <div class="speech"><h2>Put the text to cipher in the input (Keep offset=13 plz :))</h2></div>
    <br/>
    
    <div class="input">
@@ -132,6 +146,7 @@
                     <p style="
                     padding: 20px 0px;
                     border: none;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                     ">qvtvgny nffrgf gung pna or hfrq ol crbcyr gb ohl naq fryy tbbqf naq freivprf</p>
               
                   <script>
@@ -156,6 +171,7 @@
                     <p style="
                     padding: 20px 0px;
                     border: none;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                     ">Physical currency that you can touch</p>
                     <!-- <script> 
                       function colorChanger(){
@@ -178,6 +194,7 @@
                     <p style="
                     padding: 20px 0px;
                     border: none;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                     ">The stock market is booming</p>
                     <!-- <script> 
                       function colorChanger(){
@@ -200,6 +217,7 @@
                     <p style="
                     padding: 20px 0px;
                     border: none;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                     ">Ubj ner lbh gbqnl? Terng, gung'f avpr.</p>
                     <!-- <script>
                       function colorChanger(){
@@ -215,13 +233,24 @@
     </div>
   </div>
 
+  <!-- button on bottom right of page, inside of quiz questions container -->
+  <div class="d-flex flex-row-reverse mb-3">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="btn-group">
+          <button class="nextbutton" style="
+            color:white;
+            width: 250px;
+            height: 50px;
+            background: linear-gradient(272.88deg, #686DE0 4.95%, #4834D4 93.62%);
+            box-shadow: 0px 4px 20px rgba(104, 109, 224, 0.5);
+            border-radius: 50px;" 
+          onclick="document.location='page3.html'" type="button">Next Question
+          </button>
+        <!-- <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> -->
+      </div>
+    </div>
+  </div>
 </main>
-  <div class="d-flex justify-content-between align-items-center">
-    <div class="btn-group">
-      <button class="nextbutton" 
-      onclick="document.location='page3.html'" type="button">Next Question
-      </button>
-    <!-- <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> -->
-      
+
   </body>
 </html>
