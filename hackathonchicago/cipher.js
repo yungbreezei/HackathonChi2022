@@ -1,7 +1,7 @@
-var alphabet = "abcdefghijklmnopqrstuvwxyz";
-var fullAlphabet = alphabet + alphabet + alphabet;
+    var alphabet = "abcdefghijklmnopqrstuvwxyz";
+    var fullAlphabet = alphabet + alphabet + alphabet;
 
-function runCipher(){
+    function runCipher(){
   var cipherText = $('#cypher').val();
   var cipherOffset = $('#offset').val();
   cipherOffset = (cipherOffset % alphabet.length);
@@ -26,7 +26,7 @@ function runCipher(){
   $('#finish').val(cipherFinish);
 }
 
-$(document).ready(function() {
+jQuery(document).ready(function($){
   $('#cypher').keypress(function(){
     setTimeout(function(){ runCipher(); },20);
   });

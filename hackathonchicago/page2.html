@@ -9,7 +9,7 @@
     <title>page2</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
-    <script src="cipher.js"></script>
+    <script type="text/javascript" src="cipher.js"></script>
     <link href="styleguide.css" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
@@ -48,29 +48,35 @@
         </p>
       </div>
     </div>
-    <div id="container">
-      <div class="speech">Put the text to cipher in the input</div>
-      <div class="input">
-        <form id="form">
-          Text: 
-          <input type="text" id="cypher"/>
-          Offset:
-          <input type="number" value="7" id="offset"/>
-          <br/>
-          <br/>
-          <br/>
-          Finish:
-          <input type="text" id="finish"/>
+ <!-- cipher in page -->
+ <!-- <script src="cipher.js"></script> -->
+ <div id="container">
+   <div class="speech">Put the text to cipher in the input</div>
+   <div class="input">
+     <form action id="form">
+       Text: 
+       <input type="text" id="cypher"/>
+       Offset:
+       <input type="number" value="7" id="offset"/>
+       <br/>
+       <br/>
+       <br/>
+       Finish:
+       <input type="text" id="finish"/>
+ 
+       <br/>
+       <br/>
+       <br/>
+       
+     </form>
+   </div>
+ </div>
+
     
-          <br/>
-          <br/>
-          <br/>
-          
-        </form>
-      </div>
-    </div>
 
   </section>
+
+ 
 
 <div class="album py-5 bg-light">
     <div class="container">
